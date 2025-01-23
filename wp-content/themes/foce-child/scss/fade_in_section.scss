@@ -1,0 +1,79 @@
+$anim-duration-section: 1s;
+  
+  .banner{
+    opacity: 0;
+    transform: translateY(-20vh);
+}
+
+.banner.active{
+    opacity: 1;
+    transform: translateY(0vh);
+    transition: all $anim-duration-section ease-in-out;
+}
+
+.container-img{
+    opacity: 0;
+    transform: translateY(40vh);
+}
+
+.container-img.active{
+    opacity: 1;
+    transform: translateY(0vh);
+    transition: all $anim-duration-section ease-in-out;
+}
+
+#story{
+    opacity: 0;
+    transform: translateY(20vh);
+    overflow: hidden;
+}
+
+#story.active{
+    opacity: 1;
+    transform: translateY(0vh);
+    transition: all $anim-duration-section ease-in-out;
+}
+
+#characters{
+    opacity:0; 
+    transform: translateX(20vw);  
+}
+
+#characters.active{
+    opacity: 1;
+    transform: translateX(0vw);
+    transition: all $anim-duration-section ease-in-out;
+}
+
+#place{
+    opacity:0;
+    transform: translateX(-20vh);
+}
+
+#place.active{
+    opacity: 1;
+    transform: translateX(0vw);
+    transition: all $anim-duration-section ease-in-out;
+}
+
+#studio{
+    opacity:0;
+    transform: TranslateY(20vh);
+}
+
+#studio.active{
+    opacity: 1;
+    transform: TranslateY(0vh);
+    transition: all $anim-duration-section ease-in-out;
+}
+
+.oscars{
+    opacity:0;
+    transform: TranslateY(-20vh)
+}
+
+.oscars.active{
+    opacity: 1;
+    transform: TranslateY(0vh);
+    transition: all $anim-duration-section ease-in-out;
+}

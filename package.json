@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "studiokoukaki",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./wp-content/themes/foce-child/scss/style.scss:./wp-content/themes/foce-child/css/style.css" 
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

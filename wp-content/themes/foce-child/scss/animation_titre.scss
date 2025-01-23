@@ -1,0 +1,22 @@
+.titreAnimation {
+  display: inline-block;
+  transform: translateY(80px);
+  opacity: 0;
+}
+
+.titreAnimation {
+  &--scroll {
+      animation: titreScroll 2s ease-in-out forwards;
+  }
+}
+
+@keyframes titreScroll {
+  from {
+      transform: translateY(80px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}

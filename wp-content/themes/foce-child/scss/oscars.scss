@@ -1,0 +1,49 @@
+.oscars {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+  padding-top: 200px;
+  width: 100%;
+  height: 100%;
+
+  h3 {
+    background-image: url(../assets/orange-square.png);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 1.25; 
+    letter-spacing: -0.84px; 
+    text-align: left; 
+    height: 283px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0; 
+    justify-content: center; 
+    margin-left: -2em;
+  }
+
+  .oscars_img {
+    height: 129px;
+    width: 279px;
+    margin-top: 2em;
+    margin-left: -5em;
+    background-image: url(../assets/oscars-logo.png);
+}
+  }
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-top: -5%; 
+
+  &::before {
+    position: absolute;
+    margin-top: 8%; 
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 75%; 
+    right: -6%;
+  }
+}

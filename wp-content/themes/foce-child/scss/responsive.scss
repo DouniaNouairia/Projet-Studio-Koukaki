@@ -1,0 +1,159 @@
+// Variables de tailles d’écran pour les points de rupture
+$mobile: 480px;
+$tablet: 768px;
+
+// // Tablette (entre 481px et 768px)
+@media (max-width: $tablet) {
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 0.9rem; 
+  }
+  a.menu_link.titreAnimation.titreAnimation--scroll {
+    font-size: 2em;
+}
+.random_flower{
+  right:1.5%;
+}
+.hibiscus {
+  position: absolute;
+  bottom: -9%;
+  right: -12%;
+  width: 22%;
+}
+.story #characters h3{
+  margin-right: -4em;
+}
+.story #place h3 {
+  margin-top: 6em;
+}
+.swiper {
+  width: 60%;
+  margin-bottom: -10em;
+}
+#studio h2::before {
+  left: -2em;
+  top: -5%;
+}
+.oscars h3{
+  font-size: 1.6rem;
+  margin-top: -2em;
+   
+}
+.oscars {
+  padding-bottom: 150px;
+}
+.oscars .oscars_img {
+ margin-left: 0em; 
+}
+.site-footer::after {
+  bottom: 450px;
+}
+.bigCloud{
+    display:none;
+  }
+.littleCloud{
+    display: none;
+  }
+}
+
+
+// Mobile (moins de 480px)
+@media (max-width: $mobile) {
+  .video-container {
+    display: none; 
+  
+}
+.banner {
+    background-image: url('../assets/fallback-image.png'); 
+    height: 350px;
+}
+.banner img {
+  margin-top: -10%;
+  width: 60%;
+}
+div#site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  height: 60px;
+}
+.main-navigation .site-title {
+  font-size: 1.1em;
+}
+.burger {
+  width: 2.5em;
+  margin-right: 1em;
+}
+.burger span {
+  margin-left: 0em;
+}
+.main-navigation a {
+  padding-bottom: 0em; 
+}
+a.menu_link {
+  font-size: 2em;
+}
+.cat_orange {
+  bottom: 20%;
+}
+.image-logo {
+  width: 25%;
+}
+h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.85rem;
+    line-height: 1.4; 
+  }
+  .story #place > div p {
+    margin-top: 20em;
+    padding-left: 11px;
+}
+.story #characters h3 {
+  margin-right: -6em;
+}
+.swiper {
+  width: 40%;
+  margin-bottom: -20em;
+}
+.story #place h3 {
+  margin-bottom: -11em;
+  margin-left: -1.1em;
+  margin-top: 15em;
+}
+.bigCloud{
+  display:none;
+}
+.littleCloud{
+  display: none;
+}
+.oscars h3 {
+  font-size: 1.4em;
+  line-height: 0.9;
+  letter-spacing: 1.6px;
+}
+  .oscars {
+      padding-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+  }
+  .titre_oscars {
+    margin-left: 4em;
+    margin-top: -10em;
+}
+.oscars .oscars_img {
+  margin-left: 4em;
+  margin-bottom: 3em;
+}
+
+}

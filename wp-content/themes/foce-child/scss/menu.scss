@@ -1,0 +1,187 @@
+div#site-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+
+.main-navigation a{
+  padding-bottom: 0.5em;
+}
+
+// *****ICONE BURGER*****
+.burger {
+  width: 3em;
+  height: 2em;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -2.5em;
+  right: 0;
+}
+
+.burger span {
+  width: 100%;
+  height: 0.2em;
+  margin-top: 1em;
+  margin-left: -5em;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger span::before, .burger span::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background-color: black;
+}
+
+.burger span::before{
+  transform: translateY(-10px);
+}
+
+.burger span::after{
+  transform: translateY(10px);
+}
+
+.burger.active span{
+  background-color: transparent;
+}
+
+.burger.active span::before{
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+.burger.active span::after{
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+// *menu lien et image*
+.menu {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF5E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0); 
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin-left: -40px;
+}
+
+
+.menu.active {
+  transform: scale(1);
+}
+
+.menu_link {
+font-family: Roboto Mono;
+font-size: 40px;
+font-weight: 400;
+text-align: center;
+text-decoration: none;
+color: #000000;
+}
+
+
+.menu_link:hover{
+  text-shadow: 2px 2px 4px #FF5C00;
+  color:#000000
+}
+  
+.cat_orange{
+  position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 7%;
+    }
+.cat_blue{
+    position: absolute;
+    top: 23.5%;
+    left: 18%;
+    width: 8%;
+    }
+.cat_black{
+    position: absolute;
+    top:53%;
+    right:14%; 
+    width: 10%;
+}
+
+.flower-orchid{
+    position: absolute;
+    top:5%;
+    left: -4%;
+    width: 9%;
+}
+.flower{
+    position: absolute;
+    bottom: 38%;
+    left:15%;
+    width: 4%;
+}
+.sunflower{
+  position: absolute;
+  top: 10%;
+  right: 13%;
+  width: 9%;
+}
+.random_flower{
+  position: absolute;
+  top: 37%;
+  right: -2%;
+  width: 4%;
+}
+.hibiscus{
+  position: absolute;
+  bottom: -30%;
+  right: -15%;
+  width: 30%;
+}
+
+.image-logo {
+  width: 10%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.studio_koukaki{
+  width: 8%;
+  margin-bottom: 140px;
+}
+
+.rotate-menu{
+  @include rotate_infinite(50s);
+  line-height: 0;
+  transform-origin: center;
+}
+
+.float-menu1{
+  @include floating();
+}
+.float-menu2{
+  @include floating();
+  animation-delay: 2s;
+}
+.float-menu3{
+  @include floating();
+  animation-delay: 4s;
+}
